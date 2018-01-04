@@ -62,16 +62,15 @@ function encodedMessageMake(encode) {
 }
 
 function squareCode() {
-var message = messageMake();
-var length = dimension(message)
-var square = squareMake(message, length)
-var encode = encodeMake(message, length, square)
-var encodedMessage = encodedMessageMake(encode)
-return encodedMessage;
+  var message = messageMake();
+  var length = dimension(message)
+  var square = squareMake(message, length)
+  var encode = encodeMake(message, length, square)
+  var encodedMessage = encodedMessageMake(encode)
+  return encodedMessage;
 }
 
 var output = squareCode();
-
 console.log(output)
 
 
