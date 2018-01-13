@@ -15,6 +15,7 @@ function calculateChange(total, cash) {
   //loop to calculate required change
   for (denomination in float) {
     var output = float[denomination]
+    console.log(output)
     var denominationNumber = Object.keys(output)
     if (remainingChange >= denominationNumber) {
       var amount = Math.floor(remainingChange / denominationNumber);
